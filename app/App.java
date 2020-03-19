@@ -5,14 +5,19 @@ package app;
 
 import java.util.Arrays;
 
-import app.data_structure.LinkedList;
+import app.data_structure.Stack;
 
 public class App {
 
     public static void main(String[] args) {
-        var list = new LinkedList();
+        Stack stack = new Stack();
+        stack.push(1);
+        stack.push(1);
+        stack.push(1);
+        stack.push(1);
+        stack.pop();
 
-        var array = list.toArray();
-        System.out.println(list.getKthfromTheEnd(1));
+        System.out.println(stack);
+
     }
 }
