@@ -30,7 +30,7 @@ public class Stack {
     }
 
     public boolean isEmpty() {
-        return stack.length == 0;
+        return size == 0;
 
     }
 
@@ -40,6 +40,15 @@ public class Stack {
         }
 
         return stack[--size];
+
+    }
+
+    public int peek() {
+        if (isEmpty()) {
+            return -1;
+        }
+
+        return stack[size - 1];
 
     }
 
