@@ -6,6 +6,7 @@ import java.util.NoSuchElementException;
  * LinkedList
  */
 public class LinkedList {
+
     private Node first;
     private Node last;
     private int size;
