@@ -39,7 +39,7 @@ public class Tree {
         if (root.leftChild == null && root.rightChild == null) {
             return 0;
         }
-        return 1 + Math.max(height(root.leftChild), height(root.leftChild));
+        return 1 + Math.max(height(root.leftChild), height(root.rightChild));
 
     }
 

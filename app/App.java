@@ -3,21 +3,14 @@
  */
 package app;
 
-import app.data_structure.Tree;
+import java.util.Scanner;
 
 public class App {
 
-    public static void main(String[] args) throws Exception {
-        Tree tree = new Tree();
-        tree.insert(7);
-        tree.insert(4);
-        tree.insert(9);
-        tree.insert(1);
-        tree.insert(6);
-        tree.insert(8);
-        tree.insert(10);
+    public static void main(String[] args) {
 
-        System.out.println(tree.height());
+        Scanner in = Scanner(System.in);
+
     }
 
 }
