@@ -18,7 +18,7 @@ public class Heap {
     if (isEmpty())
       throw new IllegalStateException();
 
-    var root = items[0];
+    int root = items[0];
     items[0] = items[--size];
 
     bubbleDown();
@@ -27,9 +27,9 @@ public class Heap {
   }
 
   private void bubbleDown() {
-    var index = 0;
+    int index = 0;
     while (index <= size && !isValidParent(index)) {
-      var largerChildIndex = largerChildIndex(index);
+      int largerChildIndex = largerChildIndex(index);
       swap(index, largerChildIndex);
       index = largerChildIndex;
     }
@@ -61,7 +61,7 @@ public class Heap {
     if (!hasLeftChild(index))
       return true;
 
-    var isValid = items[index] >= leftChild(index);
+    boolean isValid = items[index] >= leftChild(index);
 
     if (hasRightChild(index))
       isValid &= items[index] >= rightChild(index);
@@ -90,7 +90,7 @@ public class Heap {
   }
 
   private void bubbleUp() {
-    var index = size;
+    int index = size;
     while (index > 0 && items[index] > items[parent(index)]) {
       swap(index, parent(index));
       index = parent(index);
@@ -102,7 +102,7 @@ public class Heap {
   }
 
   private void swap(int first, int second) {
-    var temp = items[first];
+    int temp = items[first];
     items[first] = items[second];
     items[second] = temp;
   }
@@ -120,14 +120,14 @@ public class Heap {
 
   private static boolean isMaxHeap(int[] array, int index) {
     // All leaf nodes are valid
-    var lastParentIndex = (array.length - 2) / 2;
+    int lastParentIndex = (array.length - 2) / 2;
     if (index > lastParentIndex)
       return true;
 
-    var leftChildIndex = index * 2 + 1;
-    var rightChildIndex = index * 2 + 2;
+    int leftChildIndex = index * 2 + 1;
+    int rightChildIndex = index * 2 + 2;
 
-    var isValidParent = array[index] >= array[leftChildIndex] && array[index] >= array[rightChildIndex];
+    boolean isValidParent = array[index] >= array[leftChildIndex] && array[index] >= array[rightChildIndex];
 
     return isValidParent && isMaxHeap(array, leftChildIndex) && isMaxHeap(array, rightChildIndex);
   }
