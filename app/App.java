@@ -3,14 +3,20 @@
  */
 package app;
 
-import java.util.Scanner;
+import app.data_structure.Heap;
 
 public class App {
 
     public static void main(String[] args) {
 
-        Scanner in = Scanner(System.in);
+        var heap = new Heap();
 
+        heap.insert(17);
+        heap.insert(5);
+        heap.insert(10);
+        heap.insert(4);
+        heap.insert(22);
+        System.out.println("Done");
     }
 
 }
