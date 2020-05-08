@@ -1,8 +1,19 @@
 package app.data_structure;
 
 public class Heap {
-  private int[] items = new int[10];
+
+  private int[] items;
   private int size;
+
+  public Heap() {
+    this.size = 0;
+    this.items = new int[10];
+  }
+
+  public Heap(int initialSize) {
+    this.size = 0;
+    this.items = new int[initialSize];
+  }
 
   public void insert(int value) {
     if (isFull())
