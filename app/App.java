@@ -3,20 +3,21 @@
  */
 package app;
 
+import app.data_structure.DoublyLinkedList;
 import app.data_structure.Heap;
 
 public class App {
 
     public static void main(String[] args) {
 
-        var heap = new Heap();
+        var list = new DoublyLinkedList<>();
+        list.addFirst(1);
+        list.addFirst(13);
+        list.addFirst(155);
+        list.addLast(12);
+        list.insertAfter(155, 43);
+        list.print();
 
-        heap.insert(17);
-        heap.insert(5);
-        heap.insert(10);
-        heap.insert(4);
-        heap.insert(22);
-        System.out.println("Done");
     }
 
 }
