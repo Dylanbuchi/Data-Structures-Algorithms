@@ -29,6 +29,7 @@ public class DoublyLinkedList<T> {
 
     public boolean isEmpty() {
         return head == null;
+
     }
 
     public void addFirst(T data) {
