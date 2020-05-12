@@ -21,9 +21,9 @@ public class BinarySearch {
                 return mid;
 
             } else if (midValue > x)
-                back--;
+                back = mid - 1;
             else {
-                front++;
+                front = mid + 1;
             }
 
         }
@@ -36,7 +36,7 @@ public class BinarySearch {
         int[] array = { 34, 56, 7, 83, 0, -56, 56, 789, 8 };
         Arrays.sort(array);
 
-        int x = -56;
+        int x = 789;
         int index = (binarySearch(x, array));
 
         String message = index != -1 ? "the index for value " + x + " is " + index

@@ -1,6 +1,6 @@
 package app.algorithms;
 
-public class Linear {
+public class LinearSearch {
 
     public static int linearSearch(int x, int[] array) {
         for (int i = 0; i < array.length; i++) {
