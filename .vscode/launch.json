@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - BinarySearch",
+            "request": "launch",
+            "mainClass": "app.algorithms.BinarySearch",
+            "projectName": "app_41cd2aa9"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Linear",
             "request": "launch",
             "mainClass": "app.algorithms.Linear",
