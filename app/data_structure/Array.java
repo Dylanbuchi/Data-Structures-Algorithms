@@ -1,7 +1,5 @@
 package app.data_structure;
 
-import java.util.Arrays;
-
 /**
  * Array
  */
