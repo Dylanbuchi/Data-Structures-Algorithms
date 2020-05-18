@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - MergeSort",
+            "request": "launch",
+            "mainClass": "app.algorithms.sorting.MergeSort",
+            "projectName": "app_12094590"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - InsertionSort",
             "request": "launch",
             "mainClass": "app.algorithms.sorting.InsertionSort",
