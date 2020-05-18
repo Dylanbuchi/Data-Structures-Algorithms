@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - InsertionSort",
+            "request": "launch",
+            "mainClass": "app.algorithms.sorting.InsertionSort",
+            "projectName": "app_12094590"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - RecursiveBinarySearch",
             "request": "launch",
             "mainClass": "app.algorithms.searching.RecursiveBinarySearch",
