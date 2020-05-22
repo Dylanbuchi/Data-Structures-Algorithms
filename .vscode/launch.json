@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - BubbleSort",
+            "request": "launch",
+            "mainClass": "app.algorithms.sorting.BubbleSort",
+            "projectName": "app_12094590"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - BinarySearchTree",
             "request": "launch",
             "mainClass": "app.data_structure.BinarySearchTree",
