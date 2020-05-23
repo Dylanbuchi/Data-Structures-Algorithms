@@ -130,6 +130,22 @@ public class BinarySearchTree<E> {
         return successor;
     }
 
+    public void insertRecursive(int key, E data) {
+        root = insertRecursive(root, key, data);
+    }
+
+    private Node<E> insertRecursive(Node<E> root, int key, E data) {
+        if (root == null) {
+            root = new Node<>(key, data);
+
+        } else if (key <= root.key) {
+            root.leftChild = insertRecursive(root.leftChild, key, data);
+        } else {
+            root.rightChild = insertRecursive(root.rightChild, key, data);
+        }
+        return root;
+    }
+
     public void insert(int key, E data) {
         Node<E> temp, node, parent;
         node = new Node<>(key, data);
